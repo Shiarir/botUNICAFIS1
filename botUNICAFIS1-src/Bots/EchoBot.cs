@@ -24,7 +24,7 @@ namespace Microsoft.BotBuilderSamples.Bots
             {
                 if (member.Id != turnContext.Activity.Recipient.Id)
                 {
-                    await turnContext.SendActivityAsync(MessageFactory.Text("nos vemos de nuevo v:"), cancellationToken);
+                    await turnContext.SendActivityAsync(MessageFactory.Text(welcomeText), cancellationToken);
                 }
             }
         }
